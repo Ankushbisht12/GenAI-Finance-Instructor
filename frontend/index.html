@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GenAI Finance Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>💰 GenAI Finance Assistant</h1>
+
+        <!-- General Explanation -->
+        <div class="card">
+            <h2>📘 General Financial Advice</h2>
+            <button onclick="getGeneral()">Generate Advice</button>
+            <div id="generalResult" class="result"></div>
+        </div>
+
+        <!-- Explain Financial Text -->
+        <div class="card">
+            <h2>📄 Explain Financial Text</h2>
+            <textarea id="textInput" placeholder="Paste financial text here..."></textarea>
+            <button onclick="explainText()">Explain</button>
+            <div id="textResult" class="result"></div>
+        </div>
+
+        <!-- Ask Question -->
+        <div class="card">
+            <h2>❓ Ask a Financial Question</h2>
+            <input type="text" id="questionInput" placeholder="Ask your finance question...">
+            <button onclick="askQuestion()">Ask</button>
+            <div id="questionResult" class="result"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
